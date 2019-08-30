@@ -1,0 +1,93 @@
+@import 'public.scss';
+*{margin:0;padding:0}
+ul{list-style:none}
+h1{font-weight:normal;}
+input{outline:0}
+@mixin size($width,$height){
+    width : $width;
+    height : $height;
+}
+a{
+   text-decoration: none;
+}
+
+header{
+    @include size(1200px,60px);
+    margin:0 auto;
+    border-bottom:1px solid #919191;
+    background:url('../image/logo_new.jpg') no-repeat 0px 10px;
+}
+main{
+    @include size(1200px,500px);
+    margin:45px auto;
+    .left{
+        @include size(465px,362px);
+        float:left;
+        margin-top:40px;
+        margin-left:140px;
+    }
+    .right{
+        @include size(400px,500px);
+        float:right;
+        margin-right:90px;
+        h1{
+            font-size:22px;
+            color: #979797;
+            line-height:25px;
+            span{
+                float:right;
+                font-size:14px;
+                a{color: #b42025;}
+            }
+        }
+        .show{
+            @include size(400px,400px);
+            border:1px solid #cbcbcb;
+            margin-top:20px;
+            text-align:center;
+            ul{
+                @include size(400px,35px);
+                margin-bottom:30px;
+                li{
+                    @include size(200px,35px);
+                    float:left;
+                    line-height:35px;
+                    text-align:center;
+                    cursor:pointer;
+                }
+                li:nth-child(1){background:#b42025;color:white}
+                li:nth-child(2){background:#f5f5f5;}
+            }
+            input{
+                @include size(360px,45px);
+                text-indent:10px;
+                color:#acacac;
+
+            }
+            input:nth-child(2){
+                margin-bottom:20px;
+            }
+            p{
+                width:380px;
+                color: #b42025;
+                margin-top:25px;
+                text-align:right;
+            }
+            input:nth-child(5){
+                background: #b42025;
+                color:white;
+            }
+            .count{
+                @include size(360px,77px);
+                margin-top:20px;
+                margin-left:20px;
+                h2{
+                    color: #a4a4a4;
+                    font-size:14px;
+                    text-align:left;
+                    margin-bottom:5px;
+                }
+            }
+        }
+    }
+}

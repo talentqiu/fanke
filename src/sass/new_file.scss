@@ -1,0 +1,13 @@
+.d{
+    .a{
+        width:100px;
+        height:200px;
+        .b{
+            height:100px;
+            width:300px;
+        }
+    }
+}
+.c{
+    @extend .a;
+}

@@ -1,0 +1,79 @@
+@import 'public.scss';
+//轮播图
+.carousel{
+    width:1200px;
+    height:530px;
+    border:1px solid;
+    margin:0 auto;
+    position: relative;
+    .left{
+        width:28px;
+        height:60px;
+        position: absolute;
+        z-index:100;
+        top:230px;
+        left:10px;
+        background:url(../image/focus_lr0918.png) no-repeat 0 0;
+    }
+    .right{
+        width:28px;
+        height:60px;
+        position: absolute;
+        z-index:100;
+        top:230px;
+        right:10px;
+        background:url(../image/focus_lr0918.png) no-repeat -55px 0px;
+    }
+}
+.reduce{
+    display:block;
+    width:1200px;
+    margin:40px auto 30px;
+}
+#date{
+    display:block;
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+    
+    span{
+        text-align:center;
+        color:#aa0000;
+        width:30px;
+        line-height:30px;
+        position:absolute;
+        top:17px;
+    }
+    span:nth-child(2){
+        right:149px;
+    }
+    span:nth-child(3){
+        right:87px;
+    }
+    span:nth-child(4){
+        right:25px;
+    }
+}
+//瀑布流
+main{
+    width:1200px;
+    height:auto;
+    overflow:hidden;
+    margin:0 auto;
+    ul{
+        width:268px;
+        float:left;
+        margin-right:24px;
+        img{
+            display:block;
+            width:268px;
+            height:500px;
+            margin-bottom:20px;
+            
+        }
+    }
+    ul:first-child{
+        margin-left:22px;
+    }
+}
+
