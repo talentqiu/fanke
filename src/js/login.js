@@ -1,1 +1,1 @@
-
+let cookieStr = $.cookie('users');
