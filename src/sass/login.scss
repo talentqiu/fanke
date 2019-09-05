@@ -45,6 +45,7 @@ main{
             border:1px solid #cbcbcb;
             margin-top:20px;
             text-align:center;
+            position: relative;
             ul{
                 @include size(400px,35px);
                 margin-bottom:30px;
@@ -67,13 +68,22 @@ main{
             input:nth-child(2){
                 margin-bottom:20px;
             }
+            .prompt{
+                position:absolute;
+                left:80px;
+                top:185px;
+                line-height: 16px;
+                color: #A10000;
+                background-color: #FFF6F7;
+                border: 1px solid #CC9998;
+            }
             p{
                 width:380px;
                 color: #b42025;
                 margin-top:25px;
                 text-align:right;
             }
-            input:nth-child(5){
+            input:nth-child(6){
                 background: #b42025;
                 color:white;
             }

@@ -148,7 +148,7 @@ $(function(){
 	})
 	//倒计时
 	setInterval(function(){
-		let targetDate = new Date(2019,8,3,12,0,0);
+		let targetDate = new Date(2019,8,10,12,0,0);
 		let all = parseInt((targetDate.getTime() - new Date().getTime())/1000);
 		let hours = parseInt(all/3600);
 		let minites = parseInt((all - hours * 3600)/60);

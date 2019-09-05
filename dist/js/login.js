@@ -1,1 +1,1 @@
-"use strict";var cookieStr=$.cookie("users");
+"use strict";var name,pwd,cookieStr=$.cookie("users"),cookieObj=convert(cookieStr);function convert(t){return t?JSON.parse(t):{}}console.log(cookieObj),$("input[type='text']").each(function(){$(this).focus(function(){$(this).val("")})}),$("input[type='text']").eq(0).blur(function(){name=$(this).val()}),$("input[type='text']").eq(1).blur(function(){pwd=$(this).val()}),$("input").eq(2).click(function(){name in cookieObj?cookieObj[name]===pwd?location.href="index.html":$(".prompt").text("用户名和密码不匹配！"):$(".prompt").text("用户名不存在！")});

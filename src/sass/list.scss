@@ -1,1 +1,150 @@
 @import 'public.scss';
+@mixin size($width,$height){
+    width:$width;
+    line-height:$height;
+}
+.sort{
+    @include size(1200px,40px);
+    margin:0 auto;
+    .sort-left{
+        display:block;
+        float:left;
+        color: #b4b4b4;
+    }
+    .sort-right{
+        display:block;
+        float:right;
+        color: #b4b4b4;
+        span{color: #a00000}
+    }
+}
+.col{
+   @include size(1200px,34px);
+   margin:0 auto; 
+   border:1px solid #eee;
+   height:34px;
+   .col-head{
+       @include size(66px,34px);
+       float:left;
+       text-align:center;
+       border-right:1px solid #eee;
+   }
+}
+.good{
+    width:1200px;
+    margin:15px auto;
+    .good-top{
+        @include size(1200px,32px);
+        height:32px;
+        border-bottom: 2px solid #b81c22;
+        span:nth-of-type(1){
+            display:block;
+            @include size(100px,32px);
+            float:left;
+            background:#b81c22;
+            color:white;
+            text-align:center;
+        }
+        span:nth-of-type(2){
+            @include size(100px,32px);
+            display:block;
+            float:right;
+            a:nth-child(1){
+                display:block;
+                width:19px;
+                line-height:17px;
+                text-align:center;
+                float:left;
+                border:1px solid #eee;
+                margin-top:10px;
+                border-radius:5px;
+            }
+            a:nth-child(2){
+                @extend a:nth-child(1);
+                width:60px;
+                float:right;
+            }
+        }
+    }
+    .good-bottom{
+        height:32px;
+        width:1200px;
+        border-bottom:1px solid #ddd;
+        ul{
+            li{
+                @include size(85px,34px);
+                height:34px;
+                border-left:1px solid #ddd;
+                float:left;
+                text-align:center;
+                color: #656565;
+            }
+        }
+        span{
+            @include size(100px,32px)
+            float:right;
+            background: #eee;
+            text-align:center;
+            color: #656565;
+        }
+    }
+}
+main{
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+    ul{
+        width:230px;
+        float:left;
+        margin-right:10px;
+    }
+    ul:last-child{
+        margin-right:0;
+    }
+}
+.list{
+    width:1200px;
+    height:26px;
+    margin:0 auto;
+    .box{
+        width:400px;
+        height:100%;
+        float:right;
+        margin-top:10px;
+        span:nth-child(1){
+            width:60px;
+            height:26px;
+            border:1px solid #eee;
+            padding-left:10px;
+            background: url(../image/sprites_20121129.png) no-repeat 0 -1997px;
+        }
+        span:nth-child(2){
+            display:inline-block;
+            @include size(26px,26px);
+            background: #b81c22;
+            color:white;
+            text-align:center;
+        }
+        span:nth-child(3){
+            display:inline-block;
+            width:62px;
+            border:1px solid #eee;
+            background: url(../image/sprites_20121129.png) no-repeat 50px -1954px;
+        }
+        input:nth-of-type(1){
+            width:26px;
+            text-align:center;
+        }
+        input:nth-of-type(2){
+            width:50px;
+            text-align:center;
+            background: #b81c22;
+            color:white;
+            border-radius:5px;
+            
+        }
+    }
+}
+.footer{
+    margin-top:-30px;
+}
